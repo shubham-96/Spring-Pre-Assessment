@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Customers</title>
+    <style>
+        .entry {
+            margin:10px;
+        }
+        .logout {
+            position: absolute;
+            right: 50px;
+            top: 50px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="../resources/js/customers.js"></script>
+</head>
+<body>
+<h1>My Customers</h1>
+<a class="logout" href="/logout">Logout</a>
+<form>
+    <input id="name" type="text" placeholder="Customer Name" required>
+    <input id="score" type="number" placeholder="Score" required>
+    <button id="submit" type="button" onclick="addCustomer()">Add Customer</button>
+</form><br />
+<!--<button class="show">Show Customers</button>-->
+<div id="customerList"></div>
+</body>
+</html>
